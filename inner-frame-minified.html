@@ -16,6 +16,7 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
         
         .image-container {
@@ -52,7 +53,7 @@
         .gradient-box {
             width: 100%;
             height: 20px;
-            margin: 20px 0;
+            margin: 10px 0;
             border-radius: 2px;
             background: linear-gradient(45deg, #3498db, #8e44ad, #e74c3c, #3498db);
             background-size: 300% 300%;
@@ -73,9 +74,7 @@
             flex-direction: column;
             align-items: center;
             cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            color: inherit;
+            transition: transform 0.3s;
         }
 
         .image-card:hover {
@@ -89,12 +88,11 @@
             border-radius: 5px;
             margin-bottom: 8px;
             border: 2px solid transparent;
-            transition: all 0.3s;
+            transition: border-color 0.3s;
         }
 
         .image-card:hover img {
             border-color: #8e44ad;
-            box-shadow: 0 0 15px rgba(142, 68, 173, 0.6);
         }
 
         .image-caption {
@@ -102,59 +100,17 @@
             color: #ddd;
             text-align: center;
             padding: 5px;
-            transition: all 0.3s;
-            width: 100%;
+            transition: color 0.3s;
         }
 
         .image-card:hover .image-caption {
             color: #8e44ad;
-            font-weight: bold;
         }
 
         @keyframes gradientFlow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
-        }
-        
-        h2 {
-            color: #8e44ad;
-            text-align: center;
-            margin: 20px 0;
-            font-size: 24px;
-        }
-        
-        ul {
-            padding-left: 20px;
-            text-align: left;
-        }
-        
-        li {
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
-        
-        strong {
-            color: #3498db;
-        }
-        
-        hr {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #8e44ad, transparent);
-            margin: 25px 0;
-        }
-        
-        .contact-highlight {
-            font-size: 18px;
-            color: #e74c3c;
-            text-align: center;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-        
-        .service-item {
-            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -167,45 +123,22 @@
              
         <div class="gradient-box"></div>
         
-        <h2>Услуги алмазного бурения</h2>
-        <p style="text-align: center;"><strong>Большой опыт в бурении. Срочный выезд!</strong><br>
-        <strong>Ненормированный рабочий день.</strong></p>
-
-        <div class="gradient-box"></div>
-
+        
         <div class="image-row">
             
-            <a href="буры.html" target="_blank" class="image-card">
-                <img src="D:\work\sites\photo_5_2025-07-26_11-51-52.jpg" alt="Буры">
-                <div class="image-caption">Буры</div>
-            </a>
+            <div class="image-card" onclick="window.open('буры.html', '_blank')">
+                <img src="D:\work\sites\photo_5_2025-07-26_11-51-52.jpg" alt="буры">
+                <div class="image-caption">буры</div>
+            </div>
             
             
-            <a href="информация.html" target="_blank" class="image-card">
+            <div class="image-card" onclick="window.open('информация.html', '_blank')">
                 <img src="D:\work\sites\photo_6_2025-07-26_11-51-52.jpg" alt="информация">
                 <div class="image-caption">информация</div>
-            </a>
+            </div>
         </div>
-
-        <div class="gradient-box"></div>
-
-        <h2>Диапазон работ:</h2>
-        <ul>
-            <li>📌 <strong>Диаметры отверстий:</strong> от <strong>20 до 500 мм</strong></li>
-            <li>📌 <strong>Минимальный выезд:</strong> <strong>7000 руб.</strong> (далее - по договоренности)</li>
-        </ul>
-
-
-        <div class="gradient-box"></div>
-
-        <h2>Контакты:</h2>
-        <div class="contact-highlight">
-            📲 Лучше один раз позвоните, чем сутки переписываться!<br>
-            Звоните в любое время!<br><br>
-            +8 917 577-78-97
-          
-        </div>
-
+        
+        
         <div class="gradient-box"></div>
     </div>
 </body>
